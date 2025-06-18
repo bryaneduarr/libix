@@ -1,12 +1,14 @@
-import { Button } from "@workspace/ui/components/button";
-
 export default function Page() {
   return (
-    <div className="flex min-h-svh items-center justify-center">
-      <div className="flex flex-col items-center justify-center gap-4">
-        <h1 className="text-2xl font-bold">Hello World</h1>
-        <Button size="sm">Button</Button>
-      </div>
+    <div className="relative min-h-screen">
+      <div
+        className="absolute inset-0 -z-10 bg-cover bg-center bg-no-repeat"
+        style={{
+          backgroundImage: "url('/home.webp')",
+        }}
+      ></div>
+
+      <div className="absolute inset-0 -z-10 bg-black opacity-40"></div>
     </div>
   );
 }
