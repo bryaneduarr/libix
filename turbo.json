@@ -25,6 +25,10 @@
     "lint": {
       "dependsOn": ["^lint"]
     },
+    "migrate": {
+      "cache": false,
+      "persistent": true
+    },
     "update": {
       "cache": false,
       "persistent": true
